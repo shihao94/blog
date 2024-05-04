@@ -1,0 +1,48 @@
+---
+layout: post
+title: 2023 DIY美国J1 waiver经验分享
+date: March-31-2023
+categories: blog
+tags: tutorial
+permalink: "/j1-waiver"
+---
+
+分享下本人的J1 waiver经验。
+
+**Timeline：**\
+Nov 17 2022: 在美国国务院网站填表申请\
+Nov 18 2022: 提交中方申请材料\
+Nov 22 2022: sent out materials to US department of state\
+Dec 29 2022: No Objection Statement received by US department of state\
+Feb 22 2023: Favorable Recommendation sent from US department of state to USCIS\
+March 03 2023: case received by USCIS\
+March 13 2023: case approved by USCIS
+
+**什么人受该规则的约束?** \
+如果你参加了访学项目，且你的DS-2019上面注明了“subject to two year rule”，或者你的J visa上写有“212(E) two year rule applies”。
+
+**“回国居住两年的限制”包括哪些?** 
+1. 不能在美国改签非移民类短期工作签证（H签证）或是公司内部调派人员（L类签证）；
+2. 不能在美国改签移民类签证或获得合法永久居民身份；
+3. 不能接受美国大使馆或领事馆的移民签证；
+4. 不能接受美国大使馆或领事馆的短期工作签证（H签证）、公司内部调派人员（L签证）或美籍人员的配偶和子女签证（K签证）；
+
+在未回国达两年的情况下，当事人受到以上四条的约束。但其中并未规定不能申请F-1/F-2， J-1/J-2，B-1/B-2等常见类别签证。曾申请过J-1签证的同学不会影响短期内再次申请F，J，B等类别签证，只对申请H/L/K类签证有影响。因此大二暑假科研不影响大三暑假科研，也不影响大四结束去美国读研究生。
+
+**如何申请豁免?** \
+简单来说，J-1豁免需要向中方、美方分别递交相关申请材料。申请程序比较复杂繁琐，总结一个大致的流程：在美国国务院网站填表申请豁免编号（case number) > 中国留学服务中心网站填写申请信息并寄送材料 > 向美国国务院递送材料 > 移民局最终审理
+1. 申请豁免编号（case number)。拿到豁免编号是申请J-1豁免的第一步，需要在[美国国务院网站](https://j1visawaiverrecommendation.state.gov)填写DS-3035表格（理由写具体点），并且最后生成一个带有条形码（bar code）的PDF，之后向中方、美方递交材料的时候都用得到。
+2. 中方：[驻美各使领馆教育处](https://www.lxgzusa.org)填写申请信息并寄送材料。需要offer letter and support letter （例子见最下面的图，证明公司愿意帮你办理H1B/绿卡）。 公司的support letter，或者绿卡材料，或者结婚证书是必须的。驻美使馆教育进行审核，审核通过后会代表中国政府向美国国务院出具“不持异议信”（No-objection letter）。“不持异议信”发出后就意味着中方审理全部结束，申请人会收到邮件通知。
+3. 向美国国务院递送材料。其实，美方申请可以和中方申请同时递出，但是只有在国务院收到中方寄出的不持异议信后才会开始进行受理。建议美方的申请材料还是尽早寄出，美国国务院系统更新的速度比较慢，有时候得等寄出材料后的1个月以后才会在系统中显示。国务院的审批完成后，不会收到任何邮件或信件通知，只能登陆系统进行查询。当系统显示Favorable Recommendation sent以后，就说明国务院审批完成，已经将申请发送至移民局进行最后一步的审理。会收到纸质版Favorable Recommendation。
+- **国务院审理时长：**大约6-8个星期
+- **国务院联系方式**：mailto:212ewaiver@state.gov
+- **进度查询网站**：https://j1visawaiverstatus.state.gov/
+4. 移民局最终审理。你不需要再向移民局递交任何材料或者表格了。移民局收到你的材料后，会自动为你申请I-612表，并平邮寄给你一份收据（receipt notice)。最终通过，你将会收到移民局批准信 (approval notice)，这意味着J-1豁免全部完成！USCIS网站可以查。
+- **移民局审理时间：**1周到1个月左右不等
+- **移民局联系方式：**(800) 375-5283
+
+ 整个过程大约3-6个月，无法加急，因此建议一毕业入职就开始弄，以免影响H1B和绿卡申请。另外，可以搜索一亩三分地看最近的申请例子。
+
+ <div style="text-align: center;">
+    <img src="./pics/j1_support_letter.png" width="400" height="500" />
+</div>
