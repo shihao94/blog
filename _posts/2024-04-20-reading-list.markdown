@@ -6,6 +6,7 @@ author: Shihao Hu
 categories: blog
 tags: reading learning
 permalink: "/reading-list"
+banner: ./pics/reading.avif
 ---
 
 This is a page to be updated continuously to share my reading progress in science, personal development, investing and business, fitness, psychology and others. 

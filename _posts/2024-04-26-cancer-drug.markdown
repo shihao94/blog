@@ -6,3 +6,7 @@ categories: blog
 tags: drug_development
 permalink: "/cancer-drug"
 ---
+
+Just doing enough becomes the virtue
+
+paper
