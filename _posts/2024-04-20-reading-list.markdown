@@ -33,6 +33,9 @@ Despite the funny title, this is by far the best personal development book I hav
 # Fitness
 - **Why we sleep** by Matthew Walker. Rating: 5 out of 5. 
 
+This is a fascinating book that educates people about the importance of sleep and the good practice of sleep, which our education system and society have fail to do so far. I have had sleep problems from time to from since my middle school (~10 years till now). I wish I could read this book earlier. But for some sleep deficiencies as claimed by the author, causal relationship is not well established based on scientific evidence in my opinion. Nevertheless, I highly recommend people to read this interesting and illuminating book.
+
+<img src="./pics/why_we_sleep.jpeg" width="200" height="300" />
 
 # Psychology
 - **Evolutionary psychology** by David Buss. Rating: 4 out of 5. 
