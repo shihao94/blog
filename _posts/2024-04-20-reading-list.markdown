@@ -28,7 +28,11 @@ Despite the funny title, this is by far the best personal development book I hav
 # Investing and business
 - **我的创业史** by 刘强东, Rating: 5 out of 5
 
+- **The Bitcoin Standard: The Decentralized Alternative to Central Banking** by Saifedean Ammous, Rating: 2.5 out of 5
 
+The Bitcoin Reddit community recommended this book to me. In the first few chapters, the author clearly explains the concept of money as a tool for exchanging value and compares the "hardness" of various forms of money and fiat throughout history. This part is logical. But the middle section about government-issued fiat and its negative impacts on the economy and society feels a bit off-topic. Many of the arguments seem to be based on association rather than causation. The final chapters on the concept and use of Bitcoin are still valid but could be more concise. The whole book could be condensed to half its size.
+
+<img src="./pics/bitcoin_standard.jpeg" width="200" height="300" />
 
 # Fitness
 - **Why we sleep** by Matthew Walker. Rating: 4 out of 5. 
