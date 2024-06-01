@@ -5,6 +5,7 @@ date: April-21-2024
 categories: blog
 tags: personal_development
 permalink: "/quality"
+banner: ./pics/be_yourself.jpeg
 ---
 
 # An intriguing thought experiment
