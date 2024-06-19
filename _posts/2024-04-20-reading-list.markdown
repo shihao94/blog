@@ -2,7 +2,7 @@
 layout: post
 title: My reading list (updating)
 date: April-20-2024
-author: Shihao Hu
+author: Shihao
 categories: blog
 tags: reading learning
 permalink: "/reading-list"
