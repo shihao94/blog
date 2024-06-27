@@ -33,6 +33,8 @@ Despite the funny title, this is by far the best personal development book I hav
 - “这个人，他懂得也有能力对自己好，对别人好。他希望财富没有原罪，物质生活有情感，有温度。他祝福他人，喜欢公平竞争，坚持正义。一个生于贫穷肮脏世界的小男孩，当他长大成为有灵魂的企业家，他不仅结束了自我的悲剧，也成为尽可能多的人的福祉”；
 - “一个苹果都不能拿”。
 
+<img src="./pics/liu.png" width="200" height="300" />
+
 - **The Bitcoin Standard: The Decentralized Alternative to Central Banking** by Saifedean Ammous, Rating: 2.5 out of 5
 
 The Bitcoin Reddit community recommended this book to me. In the first few chapters, the author clearly explains the concept of money as a tool for exchanging value and compares the "hardness" of various forms of money and fiat throughout history. This part is logical. But the middle section about government-issued fiat and its negative impacts on the economy and society feels a bit off-topic. Many of the arguments seem to be based on association rather than causation. The final chapters on the concept and use of Bitcoin are still valid but could be more concise. The whole book could be condensed to half its size.
