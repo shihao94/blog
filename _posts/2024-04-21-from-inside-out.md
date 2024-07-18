@@ -52,8 +52,6 @@ Life is following your commands anyway. So you need to decide what are the impor
 3. **Consiously create the experiences and mind your behaviors to shape your identity**\
 Instead of going auto-pilot on all the activities you have, consiously reflect whether this thing will help contruct or de-construct the quality you want to cultivate within yourself. By adopting the [growth mindset](https://www.goodreads.com/en/book/show/40745), you treat yourself as a product under continuous refinement. For example, if you want to have more "resilience" component in your personality, you can specifically do something out of your comfort zone (e.g., take a bigger challenge and overcome the struggle over a period of time). Over time, you become more comfortable with these experiences, which means you are becoming the person you want to be. 
 
-By focusing on these actions, we can set a foundation for genuine, long-term success that transcends the superficial metrics.
-
 
 
 
