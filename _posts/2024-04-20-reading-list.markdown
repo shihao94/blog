@@ -35,6 +35,12 @@ Despite the funny title, this is by far the best personal development book I hav
 
 <img src="./pics/liu.png" width="200" height="300" />
 
+- **The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime** by MJ DeMarco, Rating: 4 out of 5
+
+This books helps me a lot to clear my mind about wealth creation. It gave a nice comparison of traditional slowlane way of getting rich (via selling time) versus the fastlane (via business, service and products). Many concepts were mentioned in The Almanack Of Naval Ravikant, but this book obviously provided more examples and more details. Another important lesson of this book is the instruction to be a producer/server to meet other people's need first and get the return later. Lastly, it encouraged me to quit the crowded way most people are going. 
+
+<img src="./pics/millionaire_fastlane.jpg" width="200" height="300" />
+
 - **The Bitcoin Standard: The Decentralized Alternative to Central Banking** by Saifedean Ammous, Rating: 2.5 out of 5
 
 The Bitcoin Reddit community recommended this book to me. In the first few chapters, the author clearly explains the concept of money as a tool for exchanging value and compares the "hardness" of various forms of money and fiat throughout history. This part is logical. But the middle section about government-issued fiat and its negative impacts on the economy and society feels a bit off-topic. Many of the arguments seem to be based on association rather than causation. The final chapters on the concept and use of Bitcoin are still valid but could be more concise. The whole book could be condensed to half its size.
