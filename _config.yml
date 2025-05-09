@@ -235,6 +235,7 @@ yat:
 #   issue_term: "title"
 #   label: "utterances comment"
 #   theme: "github-light"
+theme: null
 #   follow_site_theme: true
 
 # Build settings
