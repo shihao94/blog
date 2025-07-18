@@ -23,6 +23,13 @@ by Steve Pavlina. Rating: 5 out of 5.
 
 Despite the funny title, this is by far the best personal development book I have read. The author logically proposed a universal framework of personal development, based on several principles, including truth (admit the fact), love (connection) and power (ability to act and change the life). These principles are complimentary to each other and nonredundant. Also, the author delivers the information in a concise and clear way, which makes the book enjoyable to read when many authors nowadays tend to repeat the same contents over and over in writing. 
 
+- **Dopamine Nation**
+by Dr. Anna Lembke. Rating: 4 out 5.
+
+<img src="./pics/dopamine_nation.jpg" width="200" height="300" />
+
+I finally got able to finish this book after starting to read it more than one year ago in 2023...One important effect of this book on me is to encourage me to start cold plunge, as a way to embrace pain...This book somehow reminds me of Andrew Huberman and another book called Deep Work. The basic concept is to remove layers of shallow pleasure in the daily life, face pain/boredom/fear, do more meaningful things, restore the pleasure-pain balance and be consciously different from the crowd. I believe this will generate huge returns in the long term. 
+
 # Investing and business
 - **我的创业史** by 刘强东, Rating: 5 out of 5
 
