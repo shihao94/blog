@@ -1,7 +1,29 @@
+{% comment %} Custom overrides loaded last in <head> {% endcomment %}
 <style>
-/* Force ALL MathJax inline math to be inline */
-mjx-container { display: inline !important; margin: 0 !important; }
+/* ===== Make inline math truly inline everywhere ===== */
 
-/* …but keep real display math as blocks */
-mjx-container[display="true"] { display: block !important; margin: .6em 0 !important; text-align: center !important; }
+/* MathJax v3 */
+mjx-container:not([display="true"]) { display:inline !important; margin:0 !important; text-align:inherit !important; }
+/* Keep display math as blocks */
+mjx-container[display="true"] { display:block !important; margin:.6em 0 !important; text-align:center !important; }
+
+/* MathJax v2 (older themes sometimes inject it) */
+.MathJax, .MathJax_SVG, .MathJax_CHTML { display:inline !important; margin:0 !important; }
+.MathJax_Display { display:block !important; margin:.6em 0 !important; text-align:center !important; }
+
+/* KaTeX (some themes ship KaTeX CSS) */
+.katex { display:inline !important; margin:0 !important; }
+.katex-display { display:block !important; margin:.6em 0 !important; text-align:center !important; }
+
+/* Extra specificity for headings & common containers */
+h1 mjx-container:not([display="true"]), h2 mjx-container:not([display="true"]),
+h3 mjx-container:not([display="true"]), h4 mjx-container:not([display="true"]),
+h5 mjx-container:not([display="true"]), h6 mjx-container:not([display="true"]),
+h1 .katex, h2 .katex, h3 .katex, h4 .katex, h5 .katex, h6 .katex,
+p  mjx-container:not([display="true"]), li mjx-container:not([display="true"]) {
+  display:inline !important; margin:0 !important;
+}
+
+/* Optional: prevent breaks inside short inline formulas */
+.nowrap mjx-container:not([display="true"]), .nowrap .katex { white-space:nowrap; }
 </style>
