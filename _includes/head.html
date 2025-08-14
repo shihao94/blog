@@ -17,4 +17,5 @@
   {%- include extensions/code-highlight.html -%}
   {%- include extensions/photo-swipe.html -%}
   {%- include custom-head.html -%}
+  {% raw %}{% if page.math or site.mathjax %}{% include mathjax.html %}{% endif %}{% endraw %}
 </head>

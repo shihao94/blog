@@ -242,6 +242,9 @@ yat:
 markdown: kramdown
 kramdown:
   input: GFM
+  math_engine: mathjax # added 
+  syntax_highlighter: rouge # added
+
 
 plugins:
   - jekyll-feed

@@ -2,10 +2,11 @@
 layout: post
 title: PK Modeling Journey for a First-in-Human (FIH) Study
 date: Aug-13-2025
-categories: blog
-tags: blog
+categories: pharmacometrics
+tags: pharmacometrics
 permalink: 
 banner: 
+math: true
 ---
 
 FIH programs usually generate **SAD** and **MAD (QD or BID)** data. One early question is to model PK using the observed data to generate reliable PK predictions for other dosing regimens. This post lays out a simple decision path and the modeling approach.
@@ -39,12 +40,12 @@ These can confound each other. Here’s how to separate them.
 
 ## 3. Exploration & modeling implementation
 
-### Possibility 1: **Nonlinear clearance** (capacity-limited elimination)
+### Possibility 1: Nonlinear clearance (capacity-limited elimination)
 
 * **What you should see:** dose-dependent increase in $t_{₁/₂}$ , because effective clearance decreases with concentration. $t_{1/2}=\frac{\ln 2 \cdot V}{CL}$
 * **Modeling approch:** use Michaelis-Menten elimination alone or linear clearance plus Michaelis-Menten elimination
 
-### Possibility 2: **Food effect on F1**
+### Possibility 2: Food effect on F1
 
 * **What you should see:** $t_{₁/₂}$ similar across MAD cohorts; across MAD cohorts: higher exposure after the first dose with higher doses (use $AUC_{last}$ or $AUC_{\infty}$), because food effect can show effects right after the first dose; $AUC_{\infty,Day1}\approx AUC_{\tau,ss}$
 * **Modeling approch:**
