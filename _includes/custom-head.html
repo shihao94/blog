@@ -1,34 +1,7 @@
-{% comment %}
-  You can add any custom <head> elements here.
-{% endcomment %}
-
 <style>
-/* MathJax: keep inline math inline everywhere (incl. headings) */
-html body mjx-container:not([display="true"]) {
-  display: inline !important;
-  margin: 0 !important;
-  text-align: inherit !important;
-}
+/* Force ALL MathJax inline math to be inline */
+mjx-container { display: inline !important; margin: 0 !important; }
 
-/* Extra specificity for common containers */
-h1 mjx-container:not([display="true"]),
-h2 mjx-container:not([display="true"]),
-h3 mjx-container:not([display="true"]),
-h4 mjx-container:not([display="true"]),
-h5 mjx-container:not([display="true"]),
-h6 mjx-container:not([display="true"]),
-p  mjx-container:not([display="true"]),
-li mjx-container:not([display="true"]),
-section mjx-container:not([display="true"]),
-.post mjx-container:not([display="true"]) {
-  display: inline !important;
-  margin: 0 !important;
-}
-
-/* Keep display math as blocks */
-mjx-container[display="true"] {
-  display: block !important;
-  margin: .6em 0 !important;
-  text-align: center !important;
-}
+/* …but keep real display math as blocks */
+mjx-container[display="true"] { display: block !important; margin: .6em 0 !important; text-align: center !important; }
 </style>
