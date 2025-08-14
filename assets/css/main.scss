@@ -55,11 +55,13 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 @import "yat";
 
 /* MathJax: keep inline math inline everywhere (incl. headings) */
-mjx-container:not([display="true"]) {
+:root mjx-container:not([display="true"]) {
   display: inline !important;
   margin: 0 !important;
+  text-align: inherit !important;
 }
 
+/* Inline inside common elements (extra specificity in case the theme is aggressive) */
 h1 mjx-container:not([display="true"]),
 h2 mjx-container:not([display="true"]),
 h3 mjx-container:not([display="true"]),
@@ -72,11 +74,12 @@ li mjx-container:not([display="true"]) {
   margin: 0 !important;
 }
 
-/* keep display math as blocks */
+/* Keep display math as blocks (MathJax sets display="true" for $$…$$ or \[...\]) */
 mjx-container[display="true"] {
   display: block !important;
-  margin: .5em 0 !important;
-  text-align: center;
+  margin: .6em 0 !important;
+  text-align: center !important;
 }
 
-
+/* Optional: avoid line breaks inside short inline equations */
+.nowrap mjx-container:not([display="true"]) { white-space: nowrap; }
