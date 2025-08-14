@@ -1,6 +1,34 @@
 {% comment %}
-  Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
-
-  1. Head over to https://realfavicongenerator.net/ to add your own favicons.
-  2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
+  You can add any custom <head> elements here.
 {% endcomment %}
+
+<style>
+/* MathJax: keep inline math inline everywhere (incl. headings) */
+html body mjx-container:not([display="true"]) {
+  display: inline !important;
+  margin: 0 !important;
+  text-align: inherit !important;
+}
+
+/* Extra specificity for common containers */
+h1 mjx-container:not([display="true"]),
+h2 mjx-container:not([display="true"]),
+h3 mjx-container:not([display="true"]),
+h4 mjx-container:not([display="true"]),
+h5 mjx-container:not([display="true"]),
+h6 mjx-container:not([display="true"]),
+p  mjx-container:not([display="true"]),
+li mjx-container:not([display="true"]),
+section mjx-container:not([display="true"]),
+.post mjx-container:not([display="true"]) {
+  display: inline !important;
+  margin: 0 !important;
+}
+
+/* Keep display math as blocks */
+mjx-container[display="true"] {
+  display: block !important;
+  margin: .6em 0 !important;
+  text-align: center !important;
+}
+</style>
