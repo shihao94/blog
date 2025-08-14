@@ -54,15 +54,29 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 
 @import "yat";
 
-/* MathJax inline display fix */
+/* MathJax: keep inline math inline everywhere (incl. headings) */
 mjx-container:not([display="true"]) {
   display: inline !important;
-  margin: 0;
+  margin: 0 !important;
 }
 
+h1 mjx-container:not([display="true"]),
+h2 mjx-container:not([display="true"]),
+h3 mjx-container:not([display="true"]),
+h4 mjx-container:not([display="true"]),
+h5 mjx-container:not([display="true"]),
+h6 mjx-container:not([display="true"]),
+p  mjx-container:not([display="true"]),
+li mjx-container:not([display="true"]) {
+  display: inline !important;
+  margin: 0 !important;
+}
+
+/* keep display math as blocks */
 mjx-container[display="true"] {
-  display: block;
-  margin: .5em 0;
+  display: block !important;
+  margin: .5em 0 !important;
   text-align: center;
 }
+
 
