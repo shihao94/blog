@@ -53,3 +53,16 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 
 @import "yat";
+
+/* MathJax inline display fix */
+mjx-container:not([display="true"]) {
+  display: inline !important;
+  margin: 0;
+}
+
+mjx-container[display="true"] {
+  display: block;
+  margin: .5em 0;
+  text-align: center;
+}
+
