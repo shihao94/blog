@@ -9,7 +9,7 @@ banner:
 math: true
 ---
 
-FIH programs usually generate **SAD** and **MAD (QD or BID)** data. One early question is to model PK using the observed data to generate reliable PK predictions for other dosing regimens. This post lays out a simple decision path and the modeling approach.
+FIH programs usually generate SAD and MAD (QD or BID) data. One early question is to model PK using the observed data to generate reliable PK predictions for other dosing regimens. This post lays out a simple decision path and the modeling approach.
 
 For an oral drug, one typical scenario is to have the SAD cohorts with a fasted condition and MAD cohorts with a fed condition. 
 
@@ -53,9 +53,7 @@ These can confound each other. Here’s how to separate them.
   * Treat SAD (fasted) as reference.
   * For MAD (fed), we can model dose-dependent food effect (e.g., Emax form). 
 
-    $$
-    F_{MAD}=FE \times \Bigl(F_{SAD} + \frac{F_{\max}\cdot Dose}{Dose+FD_{50}}\Bigr)
-    $$
+    $$F_{MAD}=FE \times \Bigl(F_{SAD} + \frac{F_{\max}\cdot Dose}{Dose+FD_{50}}\Bigr)$$
 
     * **FE:** baseline food effect vs fasted at a minimal dose.
     * **$F_{max}$:** maximum fractional increase in F1 due to dose under fed conditions.
@@ -65,17 +63,15 @@ These can confound each other. Here’s how to separate them.
 
  For linear PK, $AUC_{\tau,ss}=\frac{F\cdot \text{Dose}}{CL}$ and **single-dose $AUC_{\infty}$ equals the same** (see Blood Levels of Drug at the Equilibrium State after Multiple Dosing, 1965):
 
-  $$
-  AUC_{\infty,\text{Day1}}=\frac{F\cdot \text{Dose}}{CL}
-  $$
+  $$AUC_{\infty,\text{Day1}}=\frac{F\cdot \text{Dose}}{CL}$$
 
-  ⇒ At a given dose, **$AUC_{\infty,\text{Day1}}\approx AUC_{\tau,ss}$** if kinetics are linear and F, CL don’t change across occasions.
+  So, at a given dose, **$AUC_{\infty,\text{Day1}}\approx AUC_{\tau,ss}$** if kinetics are linear and F, CL don’t change across occasions.
 
 
 ## 5. Sanity checks
 
-* **%AUC extrapolation** for single-dose $AUC\_{\infty}$: keep ≤ 20% or flag as unreliable.
-* **Steady state achieved?** Confirm ≥ 4–5 terminal half-lives before relying on $AUC_{\tau,ss}$.
+* %AUC extrapolation for single-dose $AUC\_{\infty}$: keep ≤ 20% or flag as unreliable.
+* Steady state achieved? Confirm ≥ 4–5 terminal half-lives before relying on $AUC_{\tau,ss}$.
 
 
 
