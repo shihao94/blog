@@ -53,9 +53,7 @@ These can confound each other. Here’s how to separate them.
   * Treat SAD (fasted) as reference.
   * For MAD (fed), we can model dose-dependent food effect (e.g., Emax form). 
 
-    $$
-    F_{MAD}=FE \times \Bigl(F_{SAD} + \frac{F_{\max}\cdot Dose}{Dose+FD_{50}}\Bigr)
-    $$
+    \[F_{MAD}=FE \times \Bigl(F_{SAD} + \frac{F_{\max}\cdot Dose}{Dose+FD_{50}}\Bigr)\]
 
     * **FE:** baseline food effect vs fasted at a minimal dose.
     * **$F_{max}$:** maximum fractional increase in F1 due to dose under fed conditions.

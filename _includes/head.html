@@ -11,12 +11,17 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 <script>
-  MathJax = {
+  window.MathJax = {
     tex: {
       inlineMath: [['$', '$']],
       displayMath: [['$$', '$$'], ['\[', '\]']]
     }
   };
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.typesetPromise();
+    }
+  });
 </script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
