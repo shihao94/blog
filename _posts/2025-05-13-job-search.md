@@ -5,7 +5,7 @@ date: May-13-2025
 categories: blog
 tags: blog
 permalink: 
-banner: 
+banner: ./pics/job_search.png
 ---
 
 Recently, several people on LinkedIn asked me how to land their first job as a researcher in the biopharma industry. Most of them are either finishing their PhDs or working as postdocs, with no prior industry experience. I understand how they feel—I was in their shoes two years ago, too busy with research and graduation to explore the industry. So, I’m sharing some thoughts based on my own experience.
