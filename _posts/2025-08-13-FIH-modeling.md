@@ -5,7 +5,7 @@ date: Aug-13-2025
 categories: pharmacometrics
 tags: pharmacometrics
 permalink: 
-banner: 
+banner: ./pics/FIH_trial.png
 math: true
 ---
 
@@ -47,7 +47,7 @@ These can confound each other. Here’s how to separate them.
 
 ### Possibility 2: Food effect on F1
 
-* **What you should see:** $t_{₁/₂}$ similar across MAD cohorts; across MAD cohorts: higher exposure after the first dose with higher doses (use $AUC_{last}$ or $AUC_{\infty}$), because food effect can show effects right after the first dose; $AUC_{\infty,Day1}\approx AUC_{\tau,ss}$
+* **What you should see:** $t_{₁/₂}$ similar across MAD cohorts; across MAD cohorts: higher exposure after the first dose with higher doses (use $AUC_{last}$ or $AUC_{\infty}$), because food effect can show right after the first dose; $AUC_{\infty,Day1}\approx AUC_{\tau,ss}$
 * **Modeling approch:**
 
   * Treat SAD (fasted) as reference.
