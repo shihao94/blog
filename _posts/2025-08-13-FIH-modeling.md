@@ -9,11 +9,11 @@ banner:
 math: true
 ---
 
-FIH programs usually generate **SAD** and **MAD (QD or BID)** data. One early question is to model PK using the observed data to generate reliable PK predictions for other dosing regimens. This post lays out a simple decision path and the modeling approach.
+FIH programs usually generate SAD and MAD (QD or BID) data. One early question is to model PK using the observed data to generate reliable PK predictions for other dosing regimens. This post lays out a simple decision path and the modeling approach.
 
 For an oral drug, one typical scenario is to have the SAD cohorts with a fasted condition and MAD cohorts with a fed condition. 
 
-**First define dose-normalized metrics**:
+First define dose-normalized metrics:
 
   $dnAUC_{inf} = AUC_{inf} / Dose$
   
@@ -33,8 +33,8 @@ If linear across MAD cohorts, a constant F1=$\theta_1$ can be estimated. $\theta
 
 If $dnAUC_{tau, SS}$ increases with dose, two common mechanisms need to explored:
 
-* **Possibility 1 — Nonlinear clearance (capacity-limited elimination)**
-* **Possibility 2 — Increased F1 under fed conditions (food effect)**
+* Possibility 1 — Nonlinear clearance (capacity-limited elimination)
+* Possibility 2 — Increased F1 under fed conditions (food effect)
 
 These can confound each other. Here’s how to separate them.
 
@@ -61,19 +61,17 @@ These can confound each other. Here’s how to separate them.
 
 ## 4. Math/PK signatures
 
- For linear PK, $AUC_{\tau,ss}=\frac{F\cdot \text{Dose}}{CL}$ and **single-dose $AUC_{\infty}$ equals the same** (see Blood Levels of Drug at the Equilibrium State after Multiple Dosing, 1965):
+ For linear PK, $AUC_{\tau,ss}=\frac{F\cdot \text{Dose}}{CL}$ and single-dose $AUC_{\infty}$ equals the same (see Blood Levels of Drug at the Equilibrium State after Multiple Dosing, 1965):
 
-  $$
-  AUC_{\infty,\text{Day1}}=\frac{F\cdot \text{Dose}}{CL}
-  $$
+  \[AUC_{\infty,\text{Day1}}=\frac{F\cdot \text{Dose}}{CL}\]
 
   ⇒ At a given dose, **$AUC_{\infty,\text{Day1}}\approx AUC_{\tau,ss}$** if kinetics are linear and F, CL don’t change across occasions.
 
 
 ## 5. Sanity checks
 
-* **%AUC extrapolation** for single-dose $AUC\_{\infty}$: keep ≤ 20% or flag as unreliable.
-* **Steady state achieved?** Confirm ≥ 4–5 terminal half-lives before relying on $AUC_{\tau,ss}$.
+* %AUC extrapolation for single-dose $AUC\_{\infty}$: keep ≤ 20% or flag as unreliable.
+* Steady state achieved? Confirm ≥ 4–5 terminal half-lives before relying on $AUC_{\tau,ss}$.
 
 
 
