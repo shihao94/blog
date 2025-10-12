@@ -21,15 +21,15 @@ to learn new updates in this field. As I work on this summary, I had a lot of in
 <img src="{{ '/pics/linear_regression.png' | relative_url }}" width="300" height="300" />
 
 - one subject only has one measurement; Normally-distributed independent errors:
-  $Y_i = N(f(x_i, \theta), \sigma^2)$, i = 1, 2, …n 
-  $y_i$ is dependent variable, $x_i$ is independent variable, $\theta$ is model parameters, $\sigma^2$ is residual variance. $\epsilon_j=y_i-f(x_i, \theta)$ follows a normal distribution and are statistically independent.
+  $Y_i = N(f(x_i, \theta), \sigma^2)$, i = 1, 2, …n,
+  where $y_i$ is the dependent variable, $x_i$ is independent variable, $\theta$ is model parameters, $\sigma^2$ is residual variance. $\epsilon_j=y_i-f(x_i, \theta)$ follows a normal distribution and are statistically independent.
 - Different approaches exist to get “best” estimates of $\theta$: ordinary least squares, weight least squares, maximal likelihood...
-- The likelihood of the data given the parameters is $L(Y| \theta)$, which is the y axis value of distribution. The value of $\theta$ to maximize $L(Y|\theta)$ is knows as the maximum likelihood estimate of $\theta$. 
+- The likelihood of the data given the parameters is $L(Y \vert \theta)$, which is the y axis value of distribution. In this case, the value of $\theta$ to maximize $L(Y \vert \theta)$ is knows as the maximum likelihood estimate of $\theta$. 
 
 <img src="{{ '/pics/ML.png' | relative_url }}" width="400" height="200" />
 
-- Based on probability density function of normal distribution, we have: for each observation $L(y_i|\theta)=\frac{1}{\sigma \sqrt{2\pi}}e^{\frac{(y_i-f(x_i, \theta))^2}{-2\sigma^2}}$. Then, for all the observations: $L(Y|\theta)=\prod_{i=1}^{n}\frac{1}{\sigma \sqrt{2\pi}}e^{\frac{(y_i-f(x_i, \theta))^2}{-2\sigma^2}}$.
-- OFV = $-2lnL(Y|\theta)=\sum_{i=1}^{n}ln2\pi+\sum_{i=1}^{n}ln\sigma^2+\sum_{i=1}^{n}\frac{(y_i-f(x_i, \theta))^2}{\sigma^2}$, the first term is a constant, so OFV can be defined as: $nln\sigma^2+\sum_{i=1}^{n}\frac{(y_i-f(x_i, \theta))^2}{\sigma^2}$. To find the maximal likelihood is to find $\theta$ that minimizes OFV.
+- Based on probability density function of normal distribution, we have: for each observation $L(y_i \vert \theta)=\frac{1}{\sigma \sqrt{2\pi}}e^{\frac{(y_i-f(x_i, \theta))^2}{-2\sigma^2}}$. Then, for all the observations: $L(Y \vert \theta)=\prod_{i=1}^{n}\frac{1}{\sigma \sqrt{2\pi}}e^{\frac{(y_i-f(x_i, \theta))^2}{-2\sigma^2}}$.
+- OFV = $-2lnL(Y \vert \theta)=\sum_{i=1}^{n}ln2\pi+\sum_{i=1}^{n}ln\sigma^2+\sum_{i=1}^{n}\frac{(y_i-f(x_i, \theta))^2}{\sigma^2}$, the first term is a constant, so OFV can be defined as: $nln\sigma^2+\sum_{i=1}^{n}\frac{(y_i-f(x_i, \theta))^2}{\sigma^2}$. To find the maximal likelihood is to find $\theta$ that minimizes OFV.
 
 # 1. Mixed effects modeling: to get maximum likelihood estimates for repeated measured data
 
@@ -48,11 +48,11 @@ to learn new updates in this field. As I work on this summary, I had a lot of in
     
     $\theta_i \sim N(\mu, \Sigma)$ or $LN(\mu, \Sigma)$
     
-- **Goal: to find the best estimate of $\mu$, $\Sigma$, $\sigma^2$ to fit the data**  
-- The likelihood of the data $Y$ given the parameters is $L(Y| \theta)$. The value of $\theta$ to maximize $L(Y|\theta)$ is known as the maximum likelihood estimate of $\theta$
+**Our goal is to find the best estimate of $\mu$, $\Sigma$, $\sigma^2$ to fit the data**  
+- The likelihood of the data $Y$ given the parameters is $L(Y \vert \theta)$. The value of $\theta$ to maximize $L(Y \vert \theta)$ is known as the maximum likelihood estimate of $\theta$
 - $\theta_i$ is latent (missing), but we assume $\theta$ follows a log-normal or normal distribution, so we can consider the conditional likelihood at every possible value of $\theta_i$ and get a weighted average (expectation). 
-Overall conditional data likelihood from all observations (assuming conditionally independent, i.e. the conditional likelihood for an individual observation does not depend on previous observations) is the multiplication of likelihood of all observations. $L(\mu, \Sigma, \sigma^2)=\prod_{i=1}^{N}\int l_i(Y_i|\theta, \sigma^2)p(\theta|\mu,\Sigma)d\theta$,
-where $l_i(Y_i|\theta, \sigma^2)$ defines the fit to the data, and $p(\theta|\mu,\Sigma)$ is the prior on $\theta$.  
+Overall conditional data likelihood from all observations (assuming conditionally independent, i.e. the conditional likelihood for an individual observation does not depend on previous observations) is the multiplication of likelihood of all observations. $L(\mu, \Sigma, \sigma^2)=\prod_{i=1}^{N}\int l_i(Y_i \vert \theta, \sigma^2)p(\theta \vert \mu,\Sigma)d\theta$,
+where $l_i(Y_i \vert \theta, \sigma^2)$ defines the fit to the data, and $p(\theta \vert \mu,\Sigma)$ is the prior on $\theta$.  
 - The integration is computationally difficult to solve, and various methods try to solve this problem
     1. Directly maximize
     2. Approximate likelihood (FO, FOCE, Laplace)
@@ -60,7 +60,7 @@ where $l_i(Y_i|\theta, \sigma^2)$ defines the fit to the data, and $p(\theta|\mu
     
 # 2. Approximate likelihood (FO, FOCE, Laplace)
 
-## example to understand FO method
+## an example to understand FO method
 
 One-compartment PK model with IV bolus dosing, and clearance (CL) as the model parameter of interest
 
@@ -76,7 +76,7 @@ is not analytically solvable.
 
 To make this tractable, **FO linearizes** the model $f(t, \eta_i) = \frac{D}{V} e^{- \frac{\text{CL} \cdot e^{\eta_i}}{V} t}$ **around** $\eta_i = 0$
 
-Let: $f(t, \eta_i) \approx f(t, 0) + \left. \frac{\partial f(t, \eta)}{\partial \eta} \right|_{\eta=0} \cdot \eta_i$
+Let: $f(t, \eta_i) \approx f(t, 0) + \left. \frac{\partial f(t, \eta)}{\partial \eta} \right \vert_{\eta=0} \cdot \eta_i$
 
 ### Step 1: Evaluate $f(t, 0)$
 
@@ -91,7 +91,7 @@ $\frac{df}{d\eta} = \frac{d}{d\eta} \left( \frac{D}{V} \cdot e^{- \frac{\text{CL
 
 Evaluated at $\eta = 0$:
 
-$\left. \frac{df}{d\eta} \right|_{\eta=0} = \frac{D}{V} \cdot e^{- \frac{\text{CL}}{V} t} \cdot \left( -\frac{\text{CL} t}{V} \right)$
+$\left. \frac{df}{d\eta} \right\vert_{\eta=0} = \frac{D}{V} \cdot e^{- \frac{\text{CL}}{V} t} \cdot \left( -\frac{\text{CL} t}{V} \right)$
 
 ### Step 3: Linearized function
 
@@ -99,9 +99,9 @@ So, $f(t, \eta_i) \approx \frac{D}{V} \cdot e^{- \frac{\text{CL}}{V} t} -\left( 
 
 You can compute the integral over $\eta_i$ analytically
 
-## how about FOCE method
+## how about FOCE method?
 
-The difference between FO and FOCE is that FO uses $\eta_i = 0$ as the linerization point, while FOCE $\eta_i = \hat{\eta}_i$, $\hat{\eta}_i$ is the individual-specific conditional mode
+The difference between FO and FOCE is that FO uses $\eta_i = 0$ as the linerization point, while FOCE $\eta_i = \hat{\eta}_i$ ($\hat{\eta}_i$ is the individual-specific conditional mode)
 
 **First-Order (FO):** $f(t, \eta_i) \approx f(t, 0) + J_i(0) \cdot \eta_i$
 
@@ -113,7 +113,7 @@ The difference between FO and FOCE is that FO uses $\eta_i = 0$ as the linerizat
     
 2. Linearize the model around $\hat{\eta}_i$ to optimize $\theta$, $\Omega$, $\sigma^2$ (population-level optimization)
     
-     ****$f(t, \eta_i) \approx f(t, \hat{\eta}_i) + J_i(\hat{\eta}_i) \cdot (\eta_i - \hat{\eta}_i)$
+     $f(t, \eta_i) \approx f(t, \hat{\eta}_i) + J_i(\hat{\eta}_i) \cdot (\eta_i - \hat{\eta}_i)$
      
 ## when to consider Laplace method
 
@@ -139,7 +139,7 @@ The difference between FO and FOCE is that FO uses $\eta_i = 0$ as the linerizat
         more samples improve convergence stability
         
     - importance sampling: use a new distribution q(x), so that the variances gets smaller. To take samples in the important region.
-3. Difference between IMP EM and Complex nonlineaer models and/or many parameters
+3. Difference between IMP EM and Complex nonlineaer models and/or many parameters are summarized in the table below
 
     | Feature | **Monte Carlo Importance Sampling EM (IMP)** | **MCMC SAEM** |
     | --- | --- | --- |
