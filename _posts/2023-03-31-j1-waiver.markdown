@@ -44,5 +44,5 @@ March 13 2023: case approved by USCIS
  整个过程大约3-6个月，无法加急，因此建议一毕业入职就开始弄，以免影响H1B和绿卡申请。另外，可以搜索一亩三分地看最近的申请例子。
 
  <div style="text-align: center;">
-    <img src="./pics/j1_support_letter.png" width="400" height="500" />
+    <img src="./pics/j1_support_letter.png" width="400" height="600" />
 </div>

@@ -18,15 +18,15 @@ to learn new updates in this field. As I work on this summary, I had a lot of in
 
 # 0. maximum likelihood estimates for single measured data
 
-<img src="./pics/linear_regression.png" width="300" height="200" />
+<img src="{{ '/pics/linear_regression.png' | relative_url }}" width="300" height="300" />
 
 - one subject only has one measurement; Normally-distributed independent errors:
   $Y_i = N(f(x_i, \theta), \sigma^2)$, i = 1, 2, …n 
   $y_i$ is dependent variable, $x_i$ is independent variable, $\theta$ is model parameters, $\sigma^2$ is residual variance. $\epsilon_j=y_i-f(x_i, \theta)$ follows a normal distribution and are statistically independent.
-- Different approaches exist to get “best” estimates of $\theta$: ordinary least squares, weight least squares, maximal likelihood...  
+- Different approaches exist to get “best” estimates of $\theta$: ordinary least squares, weight least squares, maximal likelihood...
 - The likelihood of the data given the parameters is $L(Y| \theta)$, which is the y axis value of distribution. The value of $\theta$ to maximize $L(Y|\theta)$ is knows as the maximum likelihood estimate of $\theta$. 
 
-<img src="./pics/ML.png" width="400" height="200" />
+<img src="{{ '/pics/ML.png' | relative_url }}" width="400" height="200" />
 
 - Based on probability density function of normal distribution, we have: for each observation $L(y_i|\theta)=\frac{1}{\sigma \sqrt{2\pi}}e^{\frac{(y_i-f(x_i, \theta))^2}{-2\sigma^2}}$. Then, for all the observations: $L(Y|\theta)=\prod_{i=1}^{n}\frac{1}{\sigma \sqrt{2\pi}}e^{\frac{(y_i-f(x_i, \theta))^2}{-2\sigma^2}}$.
 - OFV = $-2lnL(Y|\theta)=\sum_{i=1}^{n}ln2\pi+\sum_{i=1}^{n}ln\sigma^2+\sum_{i=1}^{n}\frac{(y_i-f(x_i, \theta))^2}{\sigma^2}$, the first term is a constant, so OFV can be defined as: $nln\sigma^2+\sum_{i=1}^{n}\frac{(y_i-f(x_i, \theta))^2}{\sigma^2}$. To find the maximal likelihood is to find $\theta$ that minimizes OFV.
